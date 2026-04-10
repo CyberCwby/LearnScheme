@@ -34,7 +34,8 @@
 
 (define position
   (lambda (a v u t)
-    YOUR-CODE-HERE))
+    (+ (/ a 2) (* v t) u)
+    ))
 
 ;; you need to complete this procedure, then show some test cases
 
@@ -49,26 +50,31 @@
 
 (define root1
   (lambda (a b c)
-    YOUR-CODE-HERE))
+    (/ (- (- b) (- (square b) (* 4 a c)))
+     (* 2 a))
+     ))
 
 (define root2
-  (lambda (a b c)
-    YOUR-CODE-HERE))
+  ;(lambda (a b c)
+    ;;YOUR-CODE-HERE
+    );)
 
 ;; complete these procedures and show some test cases
 
 ;; Problem 3
 
 (define time-to-impact
-  (lambda (vertical-velocity elevation)
-    YOUR-CODE-HERE))
+ ; (lambda (vertical-velocity elevation)
+    ;YOUR-CODE-HERE
+    );)
 
 ;; Note that if we want to know when the ball drops to a particular height r 
 ;; (for receiver), we have
 
 (define time-to-height
-  (lambda (vertical-velocity elevation target-elevation)
-    YOUR-CODE-HERE))
+  ;(lambda (vertical-velocity elevation target-elevation)
+    ;YOUR-CODE-HERE
+    );)
 
 ;; Problem 4
 
@@ -80,8 +86,9 @@
     (/ (*  deg pi) 180.)))
 
 (define travel-distance-simple
-  (lambda (elevation velocity angle)
-    YOUR-CODE-HERE))
+  ;(lambda (elevation velocity angle)
+    ;YOUR-CODE-HERE
+    );)
 
 ;; let's try this out for some example values.  Note that we are going to 
 ;; do everything in metric units, but for quaint reasons it is easier to think
@@ -124,9 +131,10 @@
 
 (define alpha-increment 0.01)
 
-(define find-best-angle
-  (lambda (velocity elevation)
-    YOUR-CODE-HERE))
+;(define find-best-angle
+;;  (lambda (velocity elevation)
+    ;;YOUR-CODE-HERE
+;;    ))
 
 ;; find best angle
 ;; try for other velocities
@@ -202,11 +210,13 @@
 (define beta (* .5 drag-coeff density (* 3.14159 .25 (square diameter))))
 
 (define integrate
-  (lambda (x0 y0 u0 v0 dt g m beta)
-    YOUR-CODE-HERE))
+  ;(lambda (x0 y0 u0 v0 dt g m beta)
+    ;YOUR-CODE-HERE
+    );)
 
 (define travel-distance
-  YOUR-CODE-HERE)
+  ;YOUR-CODE-HERE
+  )
 
 
 ;; RUN SOME TEST CASES
